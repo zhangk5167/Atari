@@ -35,7 +35,7 @@ public class TheGame extends JFrame
 		int input = 0;
 		
 		Scanner starter = new Scanner(System.in);
-		System.out.println("Tail's Atari \nKevin Zhang \nPeriod 3 AP Computer Science 2016");
+		System.out.println("Colorful Atari \nKevin Zhang \nPeriod 3 AP Computer Science 2016");
 		
 		System.out.println("This game is a colorful version of the famous game atari.\nThe goal of the game to remove all blocks without"
 				+ "ever letting the ball touch the bottom of the screen. Good luck and have fun! :)");
