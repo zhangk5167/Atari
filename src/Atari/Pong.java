@@ -16,9 +16,12 @@ import java.awt.event.KeyEvent;
 import static java.lang.Character.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
+
+import javax.swing.JPanel;
+
 import java.awt.event.ActionListener;
 
-public class Pong extends Canvas implements KeyListener, Runnable
+public class Pong extends JPanel implements KeyListener, Runnable
 {
 	private Ball ball;
 	private Paddle leftPaddle;

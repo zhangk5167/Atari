@@ -6,6 +6,8 @@ package Atari;
 //Lab  -
 
 import javax.swing.JFrame;
+
+import java.awt.Color;
 import java.awt.Component;
 import java.util.Scanner;
 
@@ -20,6 +22,7 @@ public class TheGame extends JFrame
 	{
 		super("PONG");
 		setSize(WIDTH,HEIGHT);
+		setBackground(Color.WHITE);
 		
 		Pong game = new Pong();
 		game.waitTime = gameSpeed;
