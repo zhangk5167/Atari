@@ -25,7 +25,7 @@ public class Pong extends Canvas implements KeyListener, Runnable
 //	private Paddle rightPaddle;
 	private boolean[] keys;
 	private BufferedImage back;
-	private int rightScore, leftScore;
+	//private int rightScore, leftScore;
 	private ArrayList<Paddle> blocks = new ArrayList<>();
 	public int blockCount = 0;
 	public boolean cheatCode = false;
@@ -112,7 +112,7 @@ else{
 		ball.moveAndDraw(graphToBack);
 		leftPaddle.draw(graphToBack);
 //		rightPaddle.draw(graphToBack);
-		graphToBack.drawString("Right Score: " + rightScore + " " + "Left Score: " + leftScore, 10, 10);
+		//graphToBack.drawString("Right Score: " + rightScore + " " + "Left Score: " + leftScore, 10, 10);
 		for(Paddle i: blocks)
 		{
 			i.draw(graphToBack);
@@ -127,9 +127,9 @@ else{
 			ball.setXSpeed(-ball.getXSpeed());
 			ball.setYSpeed(ball.getYSpeed());
 			//cover the old score with a white version
-			graphToBack.setColor(Color.WHITE);
-			graphToBack.drawString("Right Score: " + rightScore + " " + "Left Score: " + leftScore, 250, 250);
-			rightScore++;
+//			graphToBack.setColor(Color.WHITE);
+//			graphToBack.drawString("Right Score: " + rightScore + " " + "Left Score: " + leftScore, 250, 250);
+			//rightScore++;
 		}
 		if(!(ball.getX() <= 780))
 		{
